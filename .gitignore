@@ -1,0 +1,12 @@
+
+#Virtual Environment
+Venv/
+.venv/
+venv/
+Env/
+
+#Python Bytecode
+__pycache__/
+
+#env file
+.env
