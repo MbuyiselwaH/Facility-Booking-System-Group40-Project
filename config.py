@@ -5,9 +5,8 @@ load_dotenv()
 
 SECRET_KEY= os.getenv('SECRET_KEY')
 
-_db_url = os.getenv('DATABASE_URL', '')
-SQLALCHEMY_DATABASE_URI = re.sub(r'^postgresql://', 'postgresql+psycopg2://', _db_url)
-#SQLALCHEMY_DATABASE_URI= os.getenv('DATABASE_URL')
+
+SQLALCHEMY_DATABASE_URI= os.getenv('DATABASE_URL')
 SQLALCHEMY_TRACK_MODIFICATIONS= False
 WTF_CSRF_ENABLED= True
 
