@@ -1,11 +1,9 @@
-import os, re
+import os
 from dotenv import load_dotenv
 
 load_dotenv()
 
 SECRET_KEY= os.getenv('SECRET_KEY')
-
-
 SQLALCHEMY_DATABASE_URI= os.getenv('DATABASE_URL')
 SQLALCHEMY_TRACK_MODIFICATIONS= False
 WTF_CSRF_ENABLED= True
@@ -45,4 +43,3 @@ PAYFAST_URL= os.getenv('PAYFAST_URL')
 SESSION_COOKIE_HTTPONLY= True
 SESSION_COOKIE_SAMESITE='Lax'
 PERMANENT_SESSION_LIFETIME= 3600
-SESSION_COOKIE_SECURE      = os.getenv('RAILWAY_ENVIRONMENT') is not None
