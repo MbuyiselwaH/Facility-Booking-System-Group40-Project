@@ -42,4 +42,4 @@ if not app.debug or os.environ.get('WERKZEUG_RUN_MAIN') == 'true':
     init_scheduler(app)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False)
